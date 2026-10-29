@@ -50,7 +50,8 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   copying height directories back from the cluster replaced them once (restored from the
   session transcript), so re-check after every copy. The cluster's `6.00/` may still have the
   old `scan.sh`/`submit` and `6.00new.dat` (locally fixed: `6.00.dat`, current scripts).
-- `old/`: the original, broken spin-polarized scans (kept for comparison only).
+- `old/`: the original, broken spin-polarized scans (kept for comparison only; local only, not in
+  the git repo; `SCF_data/6.00/plot_pes.py` draws it if present).
 - Git: public repo https://github.com/vkhokhar141/Si111-H2-PES (branch main, author email
   vikashkhokhar141@gmail.com, set per repo). `.gitignore` keeps out POTCAR (licensed), large VASP
   outputs (except the two relaxations), logs, and all job scripts (`submit`, `submit_all`, `job`,

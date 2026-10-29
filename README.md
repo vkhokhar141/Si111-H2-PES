@@ -39,7 +39,6 @@ joblib 1.5. The pickled model needs a compatible scikit-learn; otherwise refit w
 | `relax_SiH_fixbot/`, `relax_Si111_fixbot/` | slab relaxations (bottom bilayer fixed), Si-H binding |
 | `report/` | the report and its generator `make_report.py` |
 | `submit.example` | sample SLURM script to run a height scan (`scan.sh` needs `VASP_CMD`) |
-| `old/` | the first, discarded spin-polarized scan (kept for comparison) |
 
 ## Not in this repository
 

@@ -2,6 +2,7 @@
 
 Run from 6.00:  python3 plot_pes.py   ->  pes.png
 """
+import os
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -18,14 +19,17 @@ R, E0, mH1, mH2 = d.T
 Einf = E0[R == 8.0][0]
 dE = E0 - Einf
 
-# old spin-polarized run (6.00s, ENCUT 330, default MAGMOM) for comparison
+# old spin-polarized run (6.00s, ENCUT 330, default MAGMOM) for comparison; local only
+# (old/ is not in the git repository), skipped if missing
+OLD = "../../old/6.00/6.00s.dat"
 old = []
-for l in open("../../old/6.00/6.00s.dat"):
-    p = l.split()
-    if "E0=" in p:
-        old.append((float(p[1]), float(p[p.index("E0=") + 1])))
-old = np.array(sorted(old))
-old_dE = old[:, 1] - old[old[:, 0] == 8.0, 1][0]
+if os.path.isfile(OLD):
+    for l in open(OLD):
+        p = l.split()
+        if "E0=" in p:
+            old.append((float(p[1]), float(p[p.index("E0=") + 1])))
+    old = np.array(sorted(old))
+    old_dE = old[:, 1] - old[old[:, 0] == 8.0, 1][0]
 
 # equilibrium from a quartic fit around the minimum
 m = (R >= 0.65) & (R <= 0.85)
@@ -46,8 +50,9 @@ for a in (ax, bx):
 
 # --- energy panel
 ax.axhline(0, color=TEXT2, lw=0.8, ls=":")
-ax.plot(old[:, 0], old_dE, color=GRAY, lw=1.5, ls="--", marker="o", ms=4, mfc="white",
-        label="old ISPIN=2 run (6.00s): both H spins parallel")
+if len(old):
+    ax.plot(old[:, 0], old_dE, color=GRAY, lw=1.5, ls="--", marker="o", ms=4, mfc="white",
+            label="old ISPIN=2 run (6.00s): both H spins parallel")
 ax.plot(R, dE, color=BLUE, lw=2, marker="o", ms=5, mec="white", mew=0.8,
         label="new scan: opposite H spins")
 off = dE > YMAX

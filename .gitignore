@@ -25,6 +25,9 @@ submit.cmd
 slurm-*.out
 *.log
 
+# first, discarded spin-polarized scan: local only (SCF_data/6.00/plot_pes.py uses it if present)
+old/
+
 # python / render leftovers
 __pycache__/
 report/page-*.jpg
@@ -34,5 +37,4 @@ figs_r1r2/.vmd_startup_empty.tcl
 submit
 submit_all
 job
-old/**/loop.sh
 figs_r1r2/fig1.tcl
