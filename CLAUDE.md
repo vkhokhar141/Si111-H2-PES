@@ -14,7 +14,7 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
 - Energy references: two far atoms = E(h = 8, R = 8); gas-phase H2 = E(h = 8, R = 0.75).
 - Units: A and eV everywhere, except `figs_r1r2/` (bohr, like the reference paper).
 
-## Status (2026-10-28)
+## Status (2026-10-29)
 - All 29 heights x 40 R computed; 3 rerun rounds done and merged. Fit data: 1159 points =
   984 scan + 170 reruns + 4 reruns2 + 1 reruns3; 3.00/R_2.60 excluded. QC: no energy outliers,
   per-height leave-one-out rms <= 3.1 meV. Fit, MEP analysis and all figures are current.
@@ -28,6 +28,8 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   -52 meV at h = 2.85 A (mostly D3); MEP has no barrier beyond 10 meV (dissociation costs only
   the endothermicity; Eley-Rideal abstraction H + H-Si -> H2 is barrierless in this collinear
   geometry).
+- Published: public GitHub repo, release v1.0 (2026-10-29), MIT license (see "Git and GitHub").
+  Zenodo DOI not set up yet (if the user gives one: add `doi:` to CITATION.cff + README badge).
 
 ## Layout
 - `SCF_data/<h>/` (29 heights; all height directories live in `SCF_data/`, written `<h>/`
@@ -46,17 +48,33 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   `python3 make_report.py` (python-docx; uses the figures in place); `PES_report.pdf` = render.
 - `relax_SiH_fixbot/`, `relax_Si111_fixbot/`: relaxations of slab + H on Si 13 and of the bare
   slab with the bottom bilayer fixed (see "Relaxations").
-- `SCF_data/6.00/plot_pes.py`, `SCF_data/1.00/plot_h100.py`: single-height figures. They exist **only locally**:
-  copying height directories back from the cluster replaced them once (restored from the
-  session transcript), so re-check after every copy. The cluster's `6.00/` may still have the
-  old `scan.sh`/`submit` and `6.00new.dat` (locally fixed: `6.00.dat`, current scripts).
+- `SCF_data/6.00/plot_pes.py`, `SCF_data/1.00/plot_h100.py`: single-height figures, not on the
+  cluster (now also in git): copying height directories back from the cluster replaced them
+  once, so re-check after every copy. The cluster's `6.00/` may still have the old
+  `scan.sh`/`submit` and `6.00new.dat` (locally fixed: `6.00.dat`, current scripts).
 - `old/`: the original, broken spin-polarized scans (kept for comparison only; local only, not in
   the git repo; `SCF_data/6.00/plot_pes.py` draws it if present).
-- Git: public repo https://github.com/vkhokhar141/Si111-H2-PES (branch main, author email
-  vikashkhokhar141@gmail.com, set per repo). `.gitignore` keeps out POTCAR (licensed), large VASP
-  outputs (except the two relaxations), logs, and all job scripts (`submit`, `submit_all`, `job`,
-  cluster paths); `submit.example` is the public template. Never commit personal/cluster paths.
-  Pushing needs the user's GitHub token: give them the command to run themselves.
+- `README.md` (detailed GitHub front page, from the report), `LICENSE` (MIT),
+  `CITATION.cff`, `submit.example` (public SLURM template with placeholders): see "Git and
+  GitHub".
+
+## Git and GitHub
+- Public repo https://github.com/vkhokhar141/Si111-H2-PES, branch `main`; author "Vikash
+  Khokhar <vikashkhokhar141@gmail.com>" (set per repo, `git config user.email`; never the
+  university email). Release **v1.0** (annotated tag on 92bb940, published 2026-10-29).
+- `.gitignore` keeps out: POTCAR (VASP license, never commit), large VASP outputs (OUTCAR,
+  CONTCAR, ... except the two `relax_*_fixbot` runs), `*.log`, `slurm-*.out`, `submit.cmd`,
+  all job scripts (`submit`, `submit_all`, `job`: cluster paths), `old/`, `merge_reruns.py`,
+  `figs_r1r2/fig1.tcl` (absolute paths). These stay on disk; only the repo leaves them out.
+- Never commit personal or cluster paths (home and data directories, colleagues' VASP
+  binaries), university email or credentials. Before pushing new files: `git grep` for them.
+- Pushing works from this machine (the user's credentials are stored): `git push`. If it asks
+  for a login, give the user the command to run themselves. The GitHub API is unauthenticated
+  here (rate-limited); check the remote with `git fetch` + `git ls-tree origin/main` instead.
+- Keep README.md, report/ and CLAUDE.md consistent when paths or results change; the README
+  quotes the key numbers and the fit-quality table.
+- Do not `pip install cffconvert`: it downgrades jsonschema to 3.2.0 and breaks Jupyter
+  (restored to 4.23.0 on 2026-10-29). `pip download` writes into the current directory.
 
 ## Running scans (on the cluster)
 - `cd SCF_data/<h> && bash submit [JOBID]` or `bash submit_all` from the top (it loops over
