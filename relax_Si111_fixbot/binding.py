@@ -4,7 +4,7 @@ Uses the two relaxations and one scan point:
   this directory   bare slab:            first ionic step = frozen scan slab, last = relaxed
   its sibling      slab + H on Si 13:    first ionic step = frozen slab, H 1.50 A, last = relaxed
                    (relax_Si111_fixbot <-> relax_SiH_fixbot)
-  ../8.00/8.00.dat R = 8 point: frozen slab + two free H atoms (non-magnetic slab)
+  ../SCF_data/8.00/8.00.dat R = 8 point: frozen slab + two free H atoms (non-magnetic slab)
 E(H)  = [E0(h = 8, R = 8) - E0(bare slab, frozen)] / 2
 E_b   = E0(slab) + E(H) - E0(slab + H)      (> 0: bound), frozen and relaxed
 Check: the frozen E_b must reproduce the PES value -V_H(1.50 A) = 3.254 eV (PBE+D3), which
@@ -38,7 +38,7 @@ slab, slab_ok = steps(HERE)
 sih, sih_ok = steps(SIH)
 if not slab or not sih:
     raise SystemExit(f"need at least one ionic step in both {HERE} and {SIH}")
-e88 = [float(l.split()[3]) for l in open(os.path.join(TOP, "8.00", "8.00.dat"))
+e88 = [float(l.split()[3]) for l in open(os.path.join(TOP, "SCF_data", "8.00", "8.00.dat"))
        if not l.startswith("#") and l.split()[0] == "8.00"][0]
 eH = (e88 - slab[0]) / 2
 

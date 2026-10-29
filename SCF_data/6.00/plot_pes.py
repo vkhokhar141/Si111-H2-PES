@@ -20,7 +20,7 @@ dE = E0 - Einf
 
 # old spin-polarized run (6.00s, ENCUT 330, default MAGMOM) for comparison
 old = []
-for l in open("../old/6.00/6.00s.dat"):
+for l in open("../../old/6.00/6.00s.dat"):
     p = l.split()
     if "E0=" in p:
         old.append((float(p[1]), float(p[p.index("E0=") + 1])))

@@ -30,7 +30,8 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   geometry).
 
 ## Layout
-- `<h>/` (29 heights: 1.00-1.30 step 0.1, 1.30-1.70 step 0.05, 1.70-2.20 step 0.1,
+- `SCF_data/<h>/` (29 heights; all height directories live in `SCF_data/`, written `<h>/`
+  below for short: 1.00-1.30 step 0.1, 1.30-1.70 step 0.05, 1.70-2.20 step 0.1,
   2.50-8.00 step 0.5): `INCAR KPOINTS POTCAR scan.sh submit`, results in `<h>.dat`, `scan.log`,
   one `R_<R>/` per point (40 R values, 8.00 -> 0.25).
 - `submit_all`: submits every unfinished height as a SLURM chain (`--dependency=afterany`).
@@ -45,14 +46,21 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   `python3 make_report.py` (python-docx; uses the figures in place); `PES_report.pdf` = render.
 - `relax_SiH_fixbot/`, `relax_Si111_fixbot/`: relaxations of slab + H on Si 13 and of the bare
   slab with the bottom bilayer fixed (see "Relaxations").
-- `6.00/plot_pes.py`, `1.00/plot_h100.py`: single-height figures. They exist **only locally**:
+- `SCF_data/6.00/plot_pes.py`, `SCF_data/1.00/plot_h100.py`: single-height figures. They exist **only locally**:
   copying height directories back from the cluster replaced them once (restored from the
   session transcript), so re-check after every copy. The cluster's `6.00/` may still have the
   old `scan.sh`/`submit` and `6.00new.dat` (locally fixed: `6.00.dat`, current scripts).
 - `old/`: the original, broken spin-polarized scans (kept for comparison only).
+- Git: public repo https://github.com/vkhokhar141/Si111-H2-PES (branch main, author email
+  vikashkhokhar141@gmail.com, set per repo). `.gitignore` keeps out POTCAR (licensed), large VASP
+  outputs (except the two relaxations), logs, and all job scripts (`submit`, `submit_all`, `job`,
+  cluster paths); `submit.example` is the public template. Never commit personal/cluster paths.
+  Pushing needs the user's GitHub token: give them the command to run themselves.
 
 ## Running scans (on the cluster)
-- `cd <h> && bash submit [JOBID]` or `bash submit_all` from the top. 32 MPI ranks,
+- `cd SCF_data/<h> && bash submit [JOBID]` or `bash submit_all` from the top (it loops over
+  `SCF_data/<h>`). Moved into `SCF_data/` on 2026-10-29: the cluster copy may still have the
+  heights at the top level; move them there too before copying back and forth. 32 MPI ranks,
   `OMP_NUM_THREADS=1`, 4 h limit; restartable (converged points are skipped).
 - `bash <h>/scan.sh --check` -> exit 0 if all 40 points converged.
 - Regenerate a stale `<h>.dat` without running VASP: `VASP_CMD=false bash <h>/scan.sh`.

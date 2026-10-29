@@ -32,8 +32,8 @@ joblib 1.5. The pickled model needs a compatible scikit-learn; otherwise refit w
 
 | Path | Content |
 |---|---|
-| `<r2>/` (29 heights, e.g. `1.50/`) | one scan: `INCAR KPOINTS scan.sh`, table `<r2>.dat`, one `R_<r1>/` per point |
-| `<r2>/R_<r1>/` | `INCAR KPOINTS POSCAR OSZICAR` of each point; `source.txt` if the point is a rerun |
+| `SCF_data/<r2>/` (29 heights, e.g. `SCF_data/1.50/`) | one scan: `INCAR KPOINTS scan.sh`, table `<r2>.dat`, one `R_<r1>/` per point |
+| `SCF_data/<r2>/R_<r1>/` | `INCAR KPOINTS POSCAR OSZICAR` of each point; `source.txt` if the point is a rerun |
 | `fit/` | data collection, QC, fit, MEP analysis, the CSV files and the fitted model |
 | `figs_r1r2/` | paper-style figures (bohr) |
 | `relax_SiH_fixbot/`, `relax_Si111_fixbot/` | slab relaxations (bottom bilayer fixed), Si-H binding |

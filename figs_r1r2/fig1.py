@@ -13,7 +13,7 @@ import numpy as np
 from PIL import Image, ImageChops
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-POSCAR = os.path.join(HERE, "..", "1.50", "R_2.00", "POSCAR")   # any scan point: slab geometry
+POSCAR = os.path.join(HERE, "..", "SCF_data", "1.50", "R_2.00", "POSCAR")   # any scan point: slab geometry
 H_SHOW, R_SHOW = 1.50, 2.00      # A, geometry drawn: H1 at the Si-H minimum, H2 2 A above it
 SI13 = 12                        # 0-based index of Si*
 VMD = os.environ.get("VMD", "vmd")

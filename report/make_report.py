@@ -258,8 +258,8 @@ table([
 doc.add_heading("Grid and scan procedure", level=2)
 para("29 heights r2 = 1.00–1.30 (step 0.1), 1.30–1.70 (0.05), 1.70–2.20 (0.1), "
      "2.50–8.00 Å (0.5), each with 40 H–H distances r1 from 8.00 down to 0.25 Å "
-     "(dense around 0.6–2.4 Å). Each height is one scan (directory `<r2>/`, e.g. "
-     "`1.50/`): it starts at r1 = 8 Å and walks inward, each point restarting from the "
+     "(dense around 0.6–2.4 Å). Each height is one scan (directory `SCF_data/<r2>/`, "
+     "e.g. `SCF_data/1.50/`): it starts at r1 = 8 Å and walks inward, each point restarting from the "
      "previous point's wavefunction and charge density. Going inward matters: starting from "
      "closed-shell H₂ and walking outward keeps the restricted solution past the point where "
      "the H₂ spin symmetry breaks and gives energies that are far too high.")
@@ -364,11 +364,11 @@ table([
     ["`fit/pes_r1r2_E0.csv`", "main data: r1, r2, E0 (1159 points)"],
     ["`fit/pes_data.csv`", "same points, all columns (Edisp, PBE energy, moments, source)"],
     ["`fit/pes_model.joblib`, `pes_model.py`", "fitted PES (load with joblib; class `PES`)"],
-    ["`<r2>/R_<r1>/`", "VASP inputs/outputs of every point (INCAR, POSCAR, OUTCAR, OSZICAR); "
+    ["`SCF_data/<r2>/R_<r1>/`", "VASP inputs/outputs of every point (INCAR, POSCAR, OUTCAR, OSZICAR); "
      "`source.txt` if from a rerun"],
-    ["`<r2>/scan.sh`, `submit`, `submit_all`", "run a height scan on the cluster (SLURM); "
+    ["`SCF_data/<r2>/scan.sh`, `submit.example`", "run a height scan on the cluster (SLURM); "
      "`scan.sh --check` = complete?"],
-    ["`<r2>/<r2>.dat`", "per-height table: r1, F, E0, moments, SCF steps, status"],
+    ["`SCF_data/<r2>/<r2>.dat`", "per-height table: r1, F, E0, moments, SCF steps, status"],
     ["`fit/collect_data.py`", "gathers converged points → both CSV files"],
     ["`fit/qc.py`", "leave-one-out outlier and spin-state checks → `qc_report.txt`"],
     ["`fit/fit_pes.py`", "fit + cross-validation → `pes_model.joblib`, `fit_report.txt`"],

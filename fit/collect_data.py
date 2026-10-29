@@ -1,6 +1,6 @@
 """Collect all converged scan points into one table for fitting.
 
-Reads <h>/<h>.dat (E0, moments, steps) and Edisp from <h>/R_*/OUTCAR. Only points
+Reads SCF_data/<h>/<h>.dat (E0, moments, steps) and Edisp from SCF_data/<h>/R_*/OUTCAR. Only points
 marked ok whose OUTCAR reached EDIFF are used; heights with missing points are
 listed, and their converged points are kept. Converged reruns in ../reruns, ../reruns2, ...
 (in that order, so a later round overrides an earlier one) replace scan values according to
@@ -19,6 +19,7 @@ import numpy as np
 import pandas as pd
 
 TOP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCF = os.path.join(TOP, "SCF_data")   # one directory per height
 NPTS = 40
 DB_ATOMS = (1, 2, 14, 9, 10, 23, 24)   # dangling-bond Si except 13, which bonds the H
 DB_MAX = 0.15                          # muB, sum of |m| over DB_ATOMS
@@ -62,15 +63,15 @@ def converged(outcar):
 
 
 rows = []
-for d in sorted(os.listdir(TOP)):
+for d in sorted(os.listdir(SCF)):
     if not re.fullmatch(r"\d+\.\d\d", d):
         continue
-    dat = os.path.join(TOP, d, d + ".dat")
+    dat = os.path.join(SCF, d, d + ".dat")
     if not os.path.isfile(dat):
         continue
     lines = [l.split() for l in open(dat) if not l.startswith("#")]
     good = [l for l in lines if l[-1] == "ok"
-            and converged(os.path.join(TOP, d, f"R_{l[0]}", "OUTCAR"))]
+            and converged(os.path.join(SCF, d, f"R_{l[0]}", "OUTCAR"))]
     if not good:
         continue
     if len(good) < NPTS:
@@ -78,7 +79,7 @@ for d in sorted(os.listdir(TOP)):
     h = float(d)
     for l in good:
         R = float(l[0])
-        ed = edisp(os.path.join(TOP, d, f"R_{l[0]}", "OUTCAR"))
+        ed = edisp(os.path.join(SCF, d, f"R_{l[0]}", "OUTCAR"))
         if ed is None:
             raise SystemExit(f"{d}/R_{l[0]}: no Edisp in OUTCAR")
         rows.append(dict(h=h, R=R, z_low=h, z_up=h + R, F=float(l[2]), E0=float(l[3]),
@@ -88,7 +89,7 @@ for d in sorted(os.listdir(TOP)):
 df = pd.DataFrame(rows)
 # rerun points already merged into <h>/R_<R>/ (merge_reruns.py) name their round in source.txt
 df["src"] = [open(p).readline().strip() if os.path.isfile(p) else "scan"
-             for p in (os.path.join(TOP, f"{h:.2f}", f"R_{R:.2f}", "source.txt")
+             for p in (os.path.join(SCF, f"{h:.2f}", f"R_{R:.2f}", "source.txt")
                        for h, R in zip(df.h, df.R))]
 
 # reruns (../reruns, ../reruns2, ...; see list.txt there): 'lower' replaces the current
