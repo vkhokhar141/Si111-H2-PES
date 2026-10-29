@@ -8,8 +8,8 @@ their 'use' rule in list.txt there (column src = scan / reruns / reruns2 ...), a
 only if the slab's dangling bonds stayed non-magnetic (sum |m| over Si 1 2 14 9 10 23 24
 < DB_MAX): the polarized-dangling-bond state is ~0.2 eV lower and must not be mixed in.
 Points in EXCLUDE are dropped (listed with the reason when run). Rerun points merged into
-<h>/R_<R>/ by ../merge_reruns.py are read from there (src from their source.txt), so the
-rerun directories can be deleted. Also writes pes_r1r2_E0.csv (r1 = R, r2 = h, E0 only).
+<h>/R_<R>/ (by merge_reruns.py, a local tool not in the git repo) are read from there (src
+from their source.txt), so the rerun directories can be deleted. Also writes pes_r1r2_E0.csv (r1 = R, r2 = h, E0 only).
 
 Run from fit/:  python3 collect_data.py   ->  pes_data.csv
 """

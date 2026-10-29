@@ -33,6 +33,9 @@ __pycache__/
 report/page-*.jpg
 figs_r1r2/.vmd_startup_empty.tcl
 
+# one-off local tool (merged the rerun rounds into SCF_data/, done 2026-10-29)
+merge_reruns.py
+
 # job scripts are site-specific (cluster paths, modules, accounts): see submit.example
 submit
 submit_all

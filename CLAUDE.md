@@ -36,8 +36,8 @@ single-point VASP SCF calculations (PBE-D3), fitted with a GPR model for dynamic
   one `R_<R>/` per point (40 R values, 8.00 -> 0.25).
 - `submit_all`: submits every unfinished height as a SLURM chain (`--dependency=afterany`).
 - `reruns/`, `reruns2/`, `reruns3/`: recomputed single points, one round each (see "Reruns").
-  The 175 used ones are merged into `<h>/R_<R>/` (`merge_reruns.py`); the rerun directories
-  were then deleted locally (2026-10-29).
+  The 175 used ones are merged into `<h>/R_<R>/` (`merge_reruns.py`, local only, not in the git
+  repo); the rerun directories were then deleted locally (2026-10-29).
 - `fit/`: fitting pipeline and MEP analysis (see "Fitting pipeline").
 - `plot_pes2d3d.py`: data maps `pes_2d.png`, `pes_3d.png` from `fit/pes_data.csv` (the fit
   data; the excluded point is filled along R for drawing only).
