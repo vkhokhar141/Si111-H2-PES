@@ -1,0 +1,25 @@
+Global Parameters
+ISTART =  0            (Read existing wavefunction; if there)
+ISPIN  =  2            (Non-Spin polarised DFT)
+ICHARG =  2         (Non-self-consistent: GGA/LDA band structures)
+LREAL  =  Auto       (Projection operators: automatic)
+ENCUT  =  330        (Cut-off energy for plane wave basis set, in eV)
+PREC   =  Accurate       (Precision level)
+LWAVE  = .TRUE.        (Write WAVECAR or not)
+LCHARG = .TRUE.        (Write CHGCAR or not)
+ADDGRID= .TRUE.        (Increase grid; helps GGA convergence)
+
+NPAR   = 32           (Max is no. nodes; don't set for hybrids)
+KPAR   = 16           (Divides k-grid into separate groups)
+
+IVDW = 12
+
+GGA = PE
+ 
+Static Calculation
+ISMEAR =  0            (gaussian smearing method)
+SIGMA  =  0.2         (please check the width of the smearing)
+
+NELM   =  800           (Max electronic SCF steps)
+EDIFF  =  1E-05        (SCF energy convergence; in eV)
+ 

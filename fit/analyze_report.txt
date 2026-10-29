@@ -1,0 +1,28 @@
+MEP and energetics on the fitted PES (pes_model.joblib); energies in eV relative to
+gas-phase H2 at r_e unless stated. Coordinates: R = H-H, h = lower H above Si 13 (A).
+Caveat: rows h = 3.0-4.0 keep scan values with 10-20 meV slab-state offsets, so features
+< ~20 meV there (e.g. the PBE physisorption well) are within the data uncertainty.
+
+== PBE+D3
+  string: 241 images, 323 iterations, last change 9.6e-08 A, path length 15.47 A
+  H2(g)            r_e = 0.7510 A, De = 4.531 eV
+  Si-H (H far)     h = 1.501 A, binding to Si 13 = 3.254 eV (vs free H), omega = 2022 cm-1 (Si frozen)
+  H + H-Si         E = +1.277 eV  (dissociation endothermic by this much; abstraction H + H-Si -> H2 exothermic by it)
+  H2 physisorbed   R = 0.755 A, h = 2.849 A, E = -52.5 meV
+  minimum  on MEP  R = 0.755 A, h = 2.849 A, E = -0.052 eV, |grad| = 1.6e-11 eV/A, frequencies 187, 4119 cm-1, GP sigma 4.0 meV
+  (6 more stationary points along the path are ripples < 10 meV deep, in the flat asymptotic valleys: data/fit noise, not reported)
+  no barrier beyond 10 meV: from the physisorption well E rises monotonically to H + H-Si (highest image +1.277 eV at R = 8.00 A, h = 1.50 A; product +1.277 eV).
+  -> dissociation needs only the endothermicity +1.277 eV; Eley-Rideal abstraction H + H-Si -> H2 is barrierless here (within 10 meV).
+  GP sigma along the path: max 5.5 meV
+
+== PBE
+  string: 241 images, 321 iterations, last change 9.6e-08 A, path length 15.49 A
+  H2(g)            r_e = 0.7509 A, De = 4.528 eV
+  Si-H (H far)     h = 1.502 A, binding to Si 13 = 3.283 eV (vs free H), omega = 2024 cm-1 (Si frozen)
+  H + H-Si         E = +1.245 eV  (dissociation endothermic by this much; abstraction H + H-Si -> H2 exothermic by it)
+  H2 physisorbed   R = 0.751 A, h = 4.017 A, E = -17.1 meV
+  minimum  on MEP  R = 0.751 A, h = 4.017 A, E = -0.017 eV, |grad| = 1.2e-11 eV/A, frequencies 154, 4280 cm-1, GP sigma 1.9 meV
+  (16 more stationary points along the path are ripples < 10 meV deep, in the flat asymptotic valleys: data/fit noise, not reported)
+  no barrier beyond 10 meV: from the physisorption well E rises monotonically to H + H-Si (highest image +1.249 eV at R = 1.99 A, h = 1.51 A; product +1.245 eV).
+  -> dissociation needs only the endothermicity +1.245 eV; Eley-Rideal abstraction H + H-Si -> H2 is barrierless here (within 10 meV).
+  GP sigma along the path: max 5.5 meV

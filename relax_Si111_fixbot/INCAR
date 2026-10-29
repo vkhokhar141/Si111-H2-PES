@@ -1,0 +1,38 @@
+SYSTEM = Si(111) slab (bare), relaxation with the bottom bilayer fixed, PBE-D3
+
+! Start (run.sh switches to the WAVECAR when it continues a relaxation)
+ISTART =  0
+ICHARG =  2
+
+! Electronic: as for the H2 PES scans (../<h>/INCAR), tighter EDIFF for forces
+GGA    = PE
+IVDW   = 12            ! D3-BJ
+ENCUT  = 400
+PREC   = Normal
+LREAL  = Auto
+ALGO   = Normal
+EDIFF  = 1E-06
+NELM   = 300
+
+! Spin: non-magnetic slab, as for the PES (the bare slab has 96 electrons, nothing needs spin;
+! the dangling-bond-polarized slab state is ~0.2 eV lower, see ../CLAUDE.md)
+ISPIN  = 1
+
+! Smearing as for the PES (forces are those of the free energy F; compare E0)
+ISMEAR = 0
+SIGMA  = 0.2
+
+! Relaxation: bottom bilayer (Si 3 4 5 6 9 10 23 24) fixed by selective dynamics, rest free, cell fixed
+IBRION = 2             ! conjugate gradient
+ISIF   = 2
+NSW    = 200
+EDIFFG = -0.01         ! eV/A, largest force
+POTIM  = 0.5
+
+! Parallelization (32 MPI ranks, 16 irreducible k-points)
+KPAR   = 16
+NCORE  = 2
+
+! Output (WAVECAR/CHGCAR to continue a relaxation that hits the time limit)
+LWAVE  = .TRUE.
+LCHARG = .TRUE.

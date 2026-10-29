@@ -1,0 +1,98 @@
+data: 1159 points, heights 1.00 1.10 1.20 1.30 1.35 1.40 1.45 1.50 1.55 1.60 1.65 1.70 1.80 1.90 2.00 2.10 2.20 2.50 3.00 3.50 4.00 4.50 5.00 5.50 6.00 6.50 7.00 7.50 8.00
+CV heights left out: 1.35 1.45 1.55 1.65 2.10 3.50
+
+== transform 'none'
+  leave out h = 1.35  (73 s)
+    E < 1 eV    n =    0   RMSE     nan meV   max     nan meV
+    E < 3 eV    n =   35   RMSE     1.6 meV   max     5.4 meV
+    E < 5 eV    n =   36   RMSE     1.6 meV   max     5.4 meV
+    all         n =   39   RMSE     9.3 meV   max    55.6 meV
+  leave out h = 1.45  (80 s)
+    E < 1 eV    n =    0   RMSE     nan meV   max     nan meV
+    E < 3 eV    n =   36   RMSE     0.9 meV   max     4.4 meV
+    E < 5 eV    n =   36   RMSE     0.9 meV   max     4.4 meV
+    all         n =   39   RMSE     7.9 meV   max    48.2 meV
+  leave out h = 1.55  (70 s)
+    E < 1 eV    n =    7   RMSE     1.3 meV   max     1.9 meV
+    E < 3 eV    n =   36   RMSE     3.1 meV   max    13.3 meV
+    E < 5 eV    n =   37   RMSE     3.0 meV   max    13.3 meV
+    all         n =   39   RMSE     5.9 meV   max    31.2 meV
+  leave out h = 1.65  (87 s)
+    E < 1 eV    n =    9   RMSE     0.3 meV   max     0.5 meV
+    E < 3 eV    n =   36   RMSE     2.4 meV   max    11.7 meV
+    E < 5 eV    n =   37   RMSE     2.4 meV   max    11.7 meV
+    all         n =   39   RMSE     3.7 meV   max    17.9 meV
+  leave out h = 2.10  (77 s)
+    E < 1 eV    n =   10   RMSE     0.8 meV   max     1.3 meV
+    E < 3 eV    n =   36   RMSE     1.2 meV   max     3.3 meV
+    E < 5 eV    n =   37   RMSE     1.2 meV   max     3.3 meV
+    all         n =   39   RMSE     1.2 meV   max     3.3 meV
+  leave out h = 3.50  (78 s)
+    E < 1 eV    n =    9   RMSE    14.8 meV   max    25.1 meV
+    E < 3 eV    n =   15   RMSE    14.6 meV   max    25.1 meV
+    E < 5 eV    n =   37   RMSE    19.1 meV   max    40.3 meV
+    all         n =   39   RMSE    18.6 meV   max    40.3 meV
+  leave out every other R
+    E < 1 eV    n =   90   RMSE     0.9 meV   max     2.1 meV
+    E < 3 eV    n =  354   RMSE     9.0 meV   max    57.7 meV
+    E < 5 eV    n =  484   RMSE     8.5 meV   max    57.7 meV
+    all         n =  532   RMSE     9.6 meV   max   108.2 meV
+  mean RMSE (E < 3 eV): 4.7 meV
+
+== transform 'exp'
+  leave out h = 1.35  (57 s)
+    E < 1 eV    n =    0   RMSE     nan meV   max     nan meV
+    E < 3 eV    n =   35   RMSE     1.5 meV   max     3.9 meV
+    E < 5 eV    n =   36   RMSE     1.4 meV   max     3.9 meV
+    all         n =   39   RMSE     1.5 meV   max     4.0 meV
+  leave out h = 1.45  (55 s)
+    E < 1 eV    n =    0   RMSE     nan meV   max     nan meV
+    E < 3 eV    n =   36   RMSE     1.2 meV   max     3.6 meV
+    E < 5 eV    n =   36   RMSE     1.2 meV   max     3.6 meV
+    all         n =   39   RMSE     1.3 meV   max     3.6 meV
+  leave out h = 1.55  (55 s)
+    E < 1 eV    n =    7   RMSE     1.3 meV   max     2.1 meV
+    E < 3 eV    n =   36   RMSE     3.4 meV   max    13.4 meV
+    E < 5 eV    n =   37   RMSE     3.3 meV   max    13.4 meV
+    all         n =   39   RMSE     3.3 meV   max    13.4 meV
+  leave out h = 1.65  (50 s)
+    E < 1 eV    n =    9   RMSE     0.3 meV   max     0.4 meV
+    E < 3 eV    n =   36   RMSE     2.7 meV   max    12.5 meV
+    E < 5 eV    n =   37   RMSE     2.6 meV   max    12.5 meV
+    all         n =   39   RMSE     2.7 meV   max    12.5 meV
+  leave out h = 2.10  (51 s)
+    E < 1 eV    n =   10   RMSE     0.7 meV   max     1.0 meV
+    E < 3 eV    n =   36   RMSE     1.0 meV   max     3.3 meV
+    E < 5 eV    n =   37   RMSE     1.0 meV   max     3.3 meV
+    all         n =   39   RMSE     2.3 meV   max    12.6 meV
+  leave out h = 3.50  (54 s)
+    E < 1 eV    n =    9   RMSE     9.4 meV   max    18.6 meV
+    E < 3 eV    n =   15   RMSE    14.2 meV   max    22.5 meV
+    E < 5 eV    n =   37   RMSE    18.5 meV   max    30.9 meV
+    all         n =   39   RMSE    21.0 meV   max    65.3 meV
+  leave out every other R
+    E < 1 eV    n =   90   RMSE     1.5 meV   max     3.5 meV
+    E < 3 eV    n =  354   RMSE     3.4 meV   max    13.8 meV
+    E < 5 eV    n =  484   RMSE     3.1 meV   max    13.8 meV
+    all         n =  532   RMSE     4.6 meV   max    31.3 meV
+  mean RMSE (E < 3 eV): 3.9 meV
+
+== final model: transform 'exp' (lam = 1.0), all data
+  PBE 3-body GP : 4.43**2 * Matern(length_scale=[0.649, 0.314], nu=2.5) + WhiteKernel(noise_level=2.49e-06)
+  D3 GP         : 0.0964**2 * Matern(length_scale=[0.256, 0.0951], nu=2.5) + WhiteKernel(noise_level=8.14e-09)
+  training error
+    E < 1 eV    n =  201   RMSE     0.4 meV   max     2.1 meV
+    E < 3 eV    n =  730   RMSE     0.9 meV   max     6.2 meV
+    E < 5 eV    n = 1053   RMSE     1.3 meV   max    24.0 meV
+    all         n = 1159   RMSE     3.0 meV   max    65.6 meV
+
+  gradient check (1000 random points): max |analytic - FD| = 0.009 meV/A
+  gas-phase H2 from the model (PBE+D3): r_e = 0.7509 A, De = 4.531 eV, omega_e = 4276 cm-1
+  gas-phase H2 from the model (PBE   ): r_e = 0.7508 A, De = 4.528 eV, omega_e = 4282 cm-1
+  off-grid cuts (eV, PBE+D3, relative to the atoms; sigma = 3-body GP, 0 where tapered off):
+    R = 0.15, h = 1.0 E =    52.180   sigma =  225.6 meV
+    R = 1.0,  h = 0.8 E =    10.079   sigma =  464.2 meV
+    R = 0.15, h = 8   E =    44.047   sigma =    0.0 meV
+    R = 0.75, h = 12  E =    -4.530   sigma =    0.0 meV
+    R = 12,  h = 1.5  E =    -3.253   sigma =    0.0 meV
+    R = 12,  h = 12   E =     0.000   sigma =    0.0 meV

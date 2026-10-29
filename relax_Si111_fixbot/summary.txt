@@ -1,0 +1,9 @@
+status: relaxed (EDIFFG reached); 64 ionic steps over 1 run(s)
+E0 first step (frozen scan slab geometry)     = -127.140250 eV
+E0 final                                      = -127.272400 eV   (F = -127.393100)
+relaxation energy E0(final) - E0(first)       = -0.1322 eV
+largest remaining force on free atoms 0.0099 eV/A on ion 12 (8 atoms fixed)
+dangling-bond Si, displacement |dr| (dz) in A:
+  top    1: 0.080 (+0.056)  2: 0.080 (+0.056)  13: 0.599 (-0.599)  14: 0.227 (-0.226)
+  bottom 9: 0.000 (-0.000)  10: 0.000 (-0.000)  23: 0.000 (-0.000)  24: 0.000 (-0.000)
+largest displacements: ion 13: 0.599  ion 14: 0.227  ion 15: 0.125  ion 16: 0.118  ion 18: 0.099  ion 17: 0.099

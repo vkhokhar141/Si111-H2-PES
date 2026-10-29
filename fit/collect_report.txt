@@ -1,0 +1,304 @@
+reruns 1.00/R_2.60 (lower): -5.8 meV, slab moment +0.01 muB vs scan, DB moment 0.01 -> used
+reruns 1.00/R_2.30 (lower): -16.5 meV, slab moment +0.00 muB vs scan, DB moment 0.01 -> used
+reruns 1.00/R_2.00 (lower): -20.3 meV, slab moment +0.01 muB vs scan, DB moment 0.01 -> used
+reruns 1.10/R_2.00 (lower): -20.6 meV, slab moment +0.00 muB vs scan, DB moment 0.01 -> used
+reruns 1.30/R_2.30 (lower): -23.7 meV, slab moment +0.01 muB vs scan, DB moment 0.01 -> used
+reruns 1.35/R_2.30 (lower): -18.0 meV, slab moment +0.00 muB vs scan, DB moment 0.01 -> used
+reruns 1.40/R_2.20 (lower): -16.9 meV, slab moment -0.00 muB vs scan, DB moment 0.01 -> used
+reruns 1.45/R_2.60 (lower): -10.3 meV, slab moment -0.02 muB vs scan, DB moment 0.00 -> used
+reruns 1.50/R_4.40 (never): -0.1 meV, slab moment -0.00 muB vs scan, DB moment 0.01 -> scan value kept
+reruns 1.50/R_2.30 (lower): -7.7 meV, slab moment +0.00 muB vs scan, DB moment 0.00 -> used
+reruns 1.55/R_2.10 (lower): -25.3 meV, slab moment -0.00 muB vs scan, DB moment 0.00 -> used
+reruns 1.65/R_2.10 (lower): -30.5 meV, slab moment -0.02 muB vs scan, DB moment 0.03 -> used
+reruns 1.90/R_2.20 (lower): -11.0 meV, slab moment -0.00 muB vs scan, DB moment 0.00 -> used
+reruns 2.10/R_2.30 (lower): -42.1 meV, slab moment -0.01 muB vs scan, DB moment 0.01 -> used
+reruns 2.10/R_2.20 (never): -0.2 meV, slab moment +0.00 muB vs scan, DB moment 0.01 -> scan value kept
+reruns 2.20/R_2.60 (lower): -11.3 meV, slab moment +0.01 muB vs scan, DB moment 0.00 -> used
+reruns 2.50/R_2.60 (lower): -33.9 meV, slab moment -0.00 muB vs scan, DB moment 0.02 -> used
+reruns 3.00/R_8.00 (always): -226.7 meV, slab moment +0.90 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_7.00 (always): -226.7 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_6.00 (always): -227.4 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_5.00 (always): -226.7 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_4.40 (always): -226.9 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_3.90 (always): -227.4 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_3.50 (always): -229.8 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_3.10 (always): -227.3 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.80 (always): -211.2 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.60 (always): -255.7 meV, slab moment +0.91 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.30 (always): -226.5 meV, slab moment +0.89 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.20 (always): -225.9 meV, slab moment +0.88 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.10 (always): -224.9 meV, slab moment +0.86 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_2.00 (always): -224.8 meV, slab moment +0.86 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.95 (always): -224.3 meV, slab moment +0.84 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.90 (always): -223.5 meV, slab moment +0.83 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.85 (always): -222.4 meV, slab moment +0.81 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.80 (always): -220.8 meV, slab moment +0.80 muB vs scan, DB moment 1.08 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.75 (always): -218.0 meV, slab moment +0.77 muB vs scan, DB moment 1.07 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.70 (always): -215.6 meV, slab moment +0.73 muB vs scan, DB moment 1.07 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.65 (always): -210.8 meV, slab moment +0.71 muB vs scan, DB moment 1.07 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.50 (always): -198.7 meV, slab moment +0.26 muB vs scan, DB moment 1.05 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.40 (always): -195.5 meV, slab moment +0.24 muB vs scan, DB moment 1.05 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.30 (always): -194.8 meV, slab moment +0.23 muB vs scan, DB moment 1.05 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.20 (always): -194.9 meV, slab moment +0.21 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.10 (always): -195.5 meV, slab moment +0.22 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_1.00 (always): -195.9 meV, slab moment +0.22 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.95 (always): -196.1 meV, slab moment +0.23 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.90 (always): -196.1 meV, slab moment +0.24 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.85 (always): -196.1 meV, slab moment +0.27 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.80 (always): -196.1 meV, slab moment +0.29 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.75 (always): -196.0 meV, slab moment +0.30 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.70 (always): -196.0 meV, slab moment +0.34 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.65 (always): -196.2 meV, slab moment +0.34 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.60 (always): -195.9 meV, slab moment +0.37 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.55 (always): -195.6 meV, slab moment +0.43 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.45 (always): -195.2 meV, slab moment +0.46 muB vs scan, DB moment 1.04 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.35 (always): -194.9 meV, slab moment +0.50 muB vs scan, DB moment 1.03 -> scan value kept (dangling bonds polarized)
+reruns 3.00/R_0.25 (always): -194.5 meV, slab moment +0.50 muB vs scan, DB moment 1.03 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_8.00 (always): +5.0 meV, slab moment +0.74 muB vs scan, DB moment 0.28 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_7.00 (always): +5.7 meV, slab moment +0.77 muB vs scan, DB moment 0.37 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_6.00 (always): +6.6 meV, slab moment +0.77 muB vs scan, DB moment 0.37 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_5.00 (always): +7.0 meV, slab moment +0.77 muB vs scan, DB moment 0.36 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_4.40 (always): +6.4 meV, slab moment +0.77 muB vs scan, DB moment 0.37 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_3.90 (always): +6.4 meV, slab moment +0.77 muB vs scan, DB moment 0.36 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_3.50 (always): +6.6 meV, slab moment +0.76 muB vs scan, DB moment 0.35 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_3.10 (always): +7.1 meV, slab moment +0.77 muB vs scan, DB moment 0.36 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.80 (always): +3.7 meV, slab moment +0.77 muB vs scan, DB moment 0.38 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.60 (always): +0.7 meV, slab moment +0.77 muB vs scan, DB moment 0.38 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.40 (always): +8.2 meV, slab moment +0.77 muB vs scan, DB moment 0.38 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.30 (always): +5.1 meV, slab moment +0.76 muB vs scan, DB moment 0.39 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.20 (always): +4.0 meV, slab moment +0.76 muB vs scan, DB moment 0.41 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.10 (always): +4.6 meV, slab moment +0.74 muB vs scan, DB moment 0.38 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_2.00 (always): +4.4 meV, slab moment +0.70 muB vs scan, DB moment 0.40 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.95 (always): +0.9 meV, slab moment +0.73 muB vs scan, DB moment 0.39 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.90 (always): +0.1 meV, slab moment +0.72 muB vs scan, DB moment 0.40 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.85 (always): +0.2 meV, slab moment +0.72 muB vs scan, DB moment 0.36 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.80 (always): -0.6 meV, slab moment +0.68 muB vs scan, DB moment 0.35 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.75 (always): -1.2 meV, slab moment +0.67 muB vs scan, DB moment 0.35 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.70 (always): -2.4 meV, slab moment +0.61 muB vs scan, DB moment 0.34 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.65 (always): -3.7 meV, slab moment +0.55 muB vs scan, DB moment 0.33 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.50 (always): -16.5 meV, slab moment +0.53 muB vs scan, DB moment 0.34 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.40 (always): -17.8 meV, slab moment +0.42 muB vs scan, DB moment 0.35 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.30 (always): -18.7 meV, slab moment +0.39 muB vs scan, DB moment 0.36 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.20 (always): -20.8 meV, slab moment +0.40 muB vs scan, DB moment 0.40 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.10 (always): -22.4 meV, slab moment +0.41 muB vs scan, DB moment 0.43 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_1.00 (always): -28.2 meV, slab moment +0.41 muB vs scan, DB moment 0.56 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.95 (always): -28.6 meV, slab moment +0.41 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.90 (always): -28.6 meV, slab moment +0.42 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.85 (always): -28.5 meV, slab moment +0.43 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.80 (always): -28.5 meV, slab moment +0.45 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.75 (always): -28.4 meV, slab moment +0.45 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.70 (always): -28.3 meV, slab moment +0.46 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.65 (always): -28.1 meV, slab moment +0.46 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.60 (always): -28.2 meV, slab moment +0.48 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.55 (always): -28.2 meV, slab moment +0.48 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.45 (always): -28.4 meV, slab moment +0.49 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.35 (always): -28.1 meV, slab moment +0.50 muB vs scan, DB moment 0.58 -> scan value kept (dangling bonds polarized)
+reruns 3.50/R_0.25 (always): -28.1 meV, slab moment +0.51 muB vs scan, DB moment 0.57 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_8.00 (always): +2.8 meV, slab moment +0.46 muB vs scan, DB moment 0.11 -> used
+reruns 4.00/R_7.00 (always): +5.5 meV, slab moment +0.64 muB vs scan, DB moment 0.18 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_6.00 (always): +8.7 meV, slab moment +0.64 muB vs scan, DB moment 0.18 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_5.00 (always): +4.2 meV, slab moment +0.64 muB vs scan, DB moment 0.18 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_4.40 (always): +4.2 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_3.90 (always): +3.7 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_3.50 (always): +4.8 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_3.10 (always): +8.6 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.80 (always): +35.6 meV, slab moment +0.65 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.60 (always): +4.8 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.40 (always): +4.1 meV, slab moment +0.64 muB vs scan, DB moment 0.19 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.30 (always): +4.0 meV, slab moment +0.64 muB vs scan, DB moment 0.20 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.20 (always): +3.6 meV, slab moment +0.63 muB vs scan, DB moment 0.21 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.10 (always): +3.4 meV, slab moment +0.64 muB vs scan, DB moment 0.22 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_2.00 (always): +2.3 meV, slab moment +0.64 muB vs scan, DB moment 0.24 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.95 (always): +0.6 meV, slab moment +0.64 muB vs scan, DB moment 0.26 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.90 (always): -1.1 meV, slab moment +0.62 muB vs scan, DB moment 0.31 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.85 (always): -1.3 meV, slab moment +0.63 muB vs scan, DB moment 0.31 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.80 (always): -2.1 meV, slab moment +0.60 muB vs scan, DB moment 0.31 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.75 (always): -1.7 meV, slab moment +0.60 muB vs scan, DB moment 0.30 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.70 (always): -1.7 meV, slab moment +0.63 muB vs scan, DB moment 0.30 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.65 (always): -3.5 meV, slab moment +0.53 muB vs scan, DB moment 0.28 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.50 (always): -5.4 meV, slab moment +0.49 muB vs scan, DB moment 0.26 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.40 (always): -6.8 meV, slab moment +0.48 muB vs scan, DB moment 0.26 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.30 (always): -14.9 meV, slab moment +0.49 muB vs scan, DB moment 0.34 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.20 (always): -21.0 meV, slab moment +0.51 muB vs scan, DB moment 0.38 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.10 (always): -20.7 meV, slab moment +0.55 muB vs scan, DB moment 0.39 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_1.00 (always): -20.4 meV, slab moment +0.57 muB vs scan, DB moment 0.42 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.95 (always): -18.5 meV, slab moment +0.59 muB vs scan, DB moment 0.43 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.90 (always): -17.4 meV, slab moment +0.61 muB vs scan, DB moment 0.43 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.85 (always): -16.6 meV, slab moment +0.63 muB vs scan, DB moment 0.42 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.80 (always): -17.2 meV, slab moment +0.62 muB vs scan, DB moment 0.41 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.75 (always): -16.9 meV, slab moment +0.63 muB vs scan, DB moment 0.40 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.70 (always): -17.5 meV, slab moment +0.59 muB vs scan, DB moment 0.43 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.65 (always): -17.4 meV, slab moment +0.60 muB vs scan, DB moment 0.44 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.60 (always): -17.4 meV, slab moment +0.61 muB vs scan, DB moment 0.44 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.55 (always): -17.5 meV, slab moment +0.62 muB vs scan, DB moment 0.45 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.45 (always): -17.9 meV, slab moment +0.61 muB vs scan, DB moment 0.46 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.35 (always): -17.4 meV, slab moment +0.61 muB vs scan, DB moment 0.44 -> scan value kept (dangling bonds polarized)
+reruns 4.00/R_0.25 (always): -17.3 meV, slab moment +0.61 muB vs scan, DB moment 0.44 -> scan value kept (dangling bonds polarized)
+reruns 4.50/R_8.00 (always): +2.5 meV, slab moment -0.10 muB vs scan, DB moment 0.03 -> used
+reruns 4.50/R_3.50 (always): -1.2 meV, slab moment -0.10 muB vs scan, DB moment 0.03 -> used
+reruns 4.50/R_2.40 (lower): -20.2 meV, slab moment -0.06 muB vs scan, DB moment 0.04 -> used
+reruns 4.50/R_1.00 (never): +0.1 meV, slab moment -0.04 muB vs scan, DB moment 0.00 -> scan value kept
+reruns 4.50/R_0.70 (always): +0.5 meV, slab moment -0.10 muB vs scan, DB moment 0.01 -> used
+reruns 4.50/R_0.60 (always): +0.5 meV, slab moment -0.14 muB vs scan, DB moment 0.00 -> used
+reruns 4.50/R_0.55 (always): +0.5 meV, slab moment -0.17 muB vs scan, DB moment 0.00 -> used
+reruns 4.50/R_0.45 (always): +0.4 meV, slab moment -0.17 muB vs scan, DB moment 0.01 -> used
+reruns 4.50/R_0.35 (always): +0.9 meV, slab moment -0.20 muB vs scan, DB moment 0.01 -> used
+reruns 4.50/R_0.25 (always): +1.6 meV, slab moment -0.28 muB vs scan, DB moment 0.02 -> used
+reruns 5.00/R_5.00 (always): -0.9 meV, slab moment +0.21 muB vs scan, DB moment 0.01 -> used
+reruns 5.00/R_4.40 (always): -0.2 meV, slab moment +0.31 muB vs scan, DB moment 0.01 -> used
+reruns 5.00/R_3.90 (always): +0.2 meV, slab moment +0.29 muB vs scan, DB moment 0.01 -> used
+reruns 5.00/R_3.50 (always): -7.2 meV, slab moment +0.34 muB vs scan, DB moment 0.02 -> used
+reruns 5.00/R_3.10 (always): +2.0 meV, slab moment +0.40 muB vs scan, DB moment 0.02 -> used
+reruns 5.00/R_2.80 (always): +3.0 meV, slab moment +0.52 muB vs scan, DB moment 0.03 -> used
+reruns 5.00/R_2.60 (always): -34.0 meV, slab moment +0.52 muB vs scan, DB moment 0.03 -> used
+reruns 5.00/R_2.40 (always): +3.4 meV, slab moment +0.54 muB vs scan, DB moment 0.03 -> used
+reruns 5.00/R_2.30 (always): +3.3 meV, slab moment +0.54 muB vs scan, DB moment 0.04 -> used
+reruns 5.00/R_2.20 (always): +3.3 meV, slab moment +0.54 muB vs scan, DB moment 0.04 -> used
+reruns 5.00/R_2.10 (always): +3.4 meV, slab moment +0.53 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_2.00 (always): +3.8 meV, slab moment +0.51 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_1.95 (always): +3.2 meV, slab moment +0.54 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_1.90 (always): +3.2 meV, slab moment +0.54 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_1.85 (always): +2.9 meV, slab moment +0.54 muB vs scan, DB moment 0.08 -> used
+reruns 5.00/R_1.80 (always): +3.6 meV, slab moment +0.52 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_1.75 (always): +3.5 meV, slab moment +0.53 muB vs scan, DB moment 0.08 -> used
+reruns 5.00/R_1.70 (always): +3.0 meV, slab moment +0.54 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_1.65 (always): +2.8 meV, slab moment +0.52 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_1.50 (always): +2.5 meV, slab moment +0.52 muB vs scan, DB moment 0.08 -> used
+reruns 5.00/R_1.40 (always): +2.6 meV, slab moment +0.53 muB vs scan, DB moment 0.07 -> used
+reruns 5.00/R_1.30 (always): +2.8 meV, slab moment +0.52 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_1.20 (always): +2.8 meV, slab moment +0.53 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_1.10 (always): +2.8 meV, slab moment +0.55 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_1.00 (always): +2.8 meV, slab moment +0.52 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_0.95 (always): +2.8 meV, slab moment +0.53 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_0.90 (always): +2.9 meV, slab moment +0.53 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_0.85 (always): +2.7 meV, slab moment +0.53 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_0.80 (always): +2.4 meV, slab moment +0.53 muB vs scan, DB moment 0.08 -> used
+reruns 5.00/R_0.75 (always): +1.9 meV, slab moment +0.53 muB vs scan, DB moment 0.10 -> used
+reruns 5.00/R_0.70 (always): +2.8 meV, slab moment +0.54 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_0.65 (always): +3.1 meV, slab moment +0.54 muB vs scan, DB moment 0.05 -> used
+reruns 5.00/R_0.60 (always): +3.3 meV, slab moment +0.55 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_0.55 (always): +3.7 meV, slab moment +0.56 muB vs scan, DB moment 0.06 -> used
+reruns 5.00/R_0.45 (always): +4.7 meV, slab moment +0.59 muB vs scan, DB moment 0.07 -> used
+reruns 5.00/R_0.35 (always): +8.3 meV, slab moment +0.66 muB vs scan, DB moment 0.08 -> used
+reruns 5.00/R_0.25 (always): +9.0 meV, slab moment +0.65 muB vs scan, DB moment 0.05 -> used
+reruns 5.50/R_2.00 (always): +0.1 meV, slab moment -0.14 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.95 (always): +0.2 meV, slab moment -0.14 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.90 (always): +0.5 meV, slab moment -0.18 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.85 (always): +0.7 meV, slab moment -0.22 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.80 (always): +0.5 meV, slab moment -0.20 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.75 (always): +0.9 meV, slab moment -0.26 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.70 (always): +1.8 meV, slab moment -0.35 muB vs scan, DB moment 0.02 -> used
+reruns 5.50/R_1.65 (always): +2.8 meV, slab moment -0.46 muB vs scan, DB moment 0.03 -> used
+reruns 5.50/R_1.50 (always): +2.2 meV, slab moment -0.55 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.40 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.30 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.20 (always): +3.0 meV, slab moment -0.53 muB vs scan, DB moment 0.02 -> used
+reruns 5.50/R_1.10 (always): +2.9 meV, slab moment -0.53 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_1.00 (always): +2.9 meV, slab moment -0.51 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.95 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.90 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.85 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.80 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.75 (always): +3.1 meV, slab moment -0.55 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.70 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.65 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 5.50/R_0.60 (always): +3.0 meV, slab moment -0.55 muB vs scan, DB moment 0.02 -> used
+reruns 5.50/R_0.55 (always): +2.9 meV, slab moment -0.54 muB vs scan, DB moment 0.03 -> used
+reruns 5.50/R_0.45 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.03 -> used
+reruns 5.50/R_0.35 (always): +2.8 meV, slab moment -0.54 muB vs scan, DB moment 0.05 -> used
+reruns 5.50/R_0.25 (always): +3.1 meV, slab moment -0.53 muB vs scan, DB moment 0.01 -> used
+reruns 6.00/R_3.10 (never): +0.0 meV, slab moment +0.01 muB vs scan, DB moment 0.00 -> scan value kept
+reruns 6.00/R_0.95 (always): +0.7 meV, slab moment +0.10 muB vs scan, DB moment 0.01 -> used
+reruns 6.00/R_0.90 (always): +0.4 meV, slab moment +0.12 muB vs scan, DB moment 0.00 -> used
+reruns 6.00/R_0.75 (always): +0.2 meV, slab moment +0.13 muB vs scan, DB moment 0.00 -> used
+reruns 6.00/R_0.70 (always): +0.3 meV, slab moment +0.16 muB vs scan, DB moment 0.00 -> used
+reruns 6.00/R_0.65 (always): +0.3 meV, slab moment +0.15 muB vs scan, DB moment 0.01 -> used
+reruns 6.00/R_0.60 (always): +0.2 meV, slab moment +0.13 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_2.10 (always): +0.5 meV, slab moment -0.11 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_2.00 (always): +0.1 meV, slab moment -0.11 muB vs scan, DB moment 0.00 -> used
+reruns 6.50/R_1.95 (always): +0.3 meV, slab moment -0.14 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.90 (always): +0.5 meV, slab moment -0.19 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.85 (always): +0.9 meV, slab moment -0.25 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.80 (always): +0.6 meV, slab moment -0.28 muB vs scan, DB moment 0.03 -> used
+reruns 6.50/R_1.75 (always): +1.2 meV, slab moment -0.39 muB vs scan, DB moment 0.05 -> used
+reruns 6.50/R_1.70 (always): +2.7 meV, slab moment -0.49 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.65 (always): +2.3 meV, slab moment -0.53 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.50 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.03 -> used
+reruns 6.50/R_1.40 (always): +3.1 meV, slab moment -0.52 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.30 (always): +3.2 meV, slab moment -0.54 muB vs scan, DB moment 0.02 -> used
+reruns 6.50/R_1.20 (always): +3.6 meV, slab moment -0.55 muB vs scan, DB moment 0.03 -> used
+reruns 6.50/R_1.10 (always): +3.2 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_1.00 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.95 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.90 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.02 -> used
+reruns 6.50/R_0.85 (always): +2.9 meV, slab moment -0.54 muB vs scan, DB moment 0.03 -> used
+reruns 6.50/R_0.80 (always): +3.3 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.75 (always): +3.2 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.70 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.00 -> used
+reruns 6.50/R_0.65 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.00 -> used
+reruns 6.50/R_0.60 (always): +3.1 meV, slab moment -0.55 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.55 (always): +3.2 meV, slab moment -0.55 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.45 (always): +3.5 meV, slab moment -0.55 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.35 (always): +6.4 meV, slab moment -0.64 muB vs scan, DB moment 0.01 -> used
+reruns 6.50/R_0.25 (always): +8.2 meV, slab moment -0.66 muB vs scan, DB moment 0.02 -> used
+reruns 7.00/R_2.40 (lower): -30.2 meV, slab moment +0.02 muB vs scan, DB moment 0.00 -> used
+reruns 7.00/R_1.20 (always): +0.2 meV, slab moment +0.12 muB vs scan, DB moment 0.00 -> used
+reruns 7.00/R_1.10 (always): +0.4 meV, slab moment +0.14 muB vs scan, DB moment 0.00 -> used
+reruns 7.00/R_1.00 (always): +0.4 meV, slab moment +0.16 muB vs scan, DB moment 0.00 -> used
+reruns 7.00/R_0.95 (always): +0.6 meV, slab moment +0.17 muB vs scan, DB moment 0.01 -> used
+reruns 7.00/R_0.90 (always): +1.1 meV, slab moment +0.19 muB vs scan, DB moment 0.01 -> used
+reruns 7.00/R_0.85 (always): +1.2 meV, slab moment +0.20 muB vs scan, DB moment 0.02 -> used
+reruns 7.00/R_0.80 (always): +1.7 meV, slab moment +0.21 muB vs scan, DB moment 0.03 -> used
+reruns 7.00/R_0.75 (always): +2.1 meV, slab moment +0.22 muB vs scan, DB moment 0.05 -> used
+reruns 7.00/R_0.70 (always): +11.8 meV, slab moment +0.24 muB vs scan, DB moment 0.07 -> used
+reruns 7.00/R_0.65 (always): +13.8 meV, slab moment +0.26 muB vs scan, DB moment 0.02 -> used
+reruns 7.00/R_0.60 (always): +14.1 meV, slab moment +0.31 muB vs scan, DB moment 0.03 -> used
+reruns 7.00/R_0.55 (always): +14.4 meV, slab moment +0.36 muB vs scan, DB moment 0.04 -> used
+reruns 7.00/R_0.45 (always): +15.5 meV, slab moment +0.41 muB vs scan, DB moment 0.00 -> used
+reruns 7.00/R_0.35 (always): +16.5 meV, slab moment +0.49 muB vs scan, DB moment 0.01 -> used
+reruns 7.00/R_0.25 (always): +17.3 meV, slab moment +0.56 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_2.40 (lower): -14.7 meV, slab moment +0.01 muB vs scan, DB moment 0.00 -> used
+reruns 7.50/R_1.75 (always): +0.6 meV, slab moment +0.10 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_1.70 (always): +0.2 meV, slab moment +0.15 muB vs scan, DB moment 0.03 -> used
+reruns 7.50/R_1.65 (always): +0.2 meV, slab moment +0.19 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_0.85 (always): +0.2 meV, slab moment +0.12 muB vs scan, DB moment 0.00 -> used
+reruns 7.50/R_0.75 (never): +0.2 meV, slab moment +0.09 muB vs scan, DB moment 0.00 -> scan value kept
+reruns 7.50/R_0.70 (always): +0.2 meV, slab moment +0.11 muB vs scan, DB moment 0.00 -> used
+reruns 7.50/R_0.65 (always): +0.3 meV, slab moment +0.14 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_0.60 (always): +0.4 meV, slab moment +0.17 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_0.45 (always): +0.9 meV, slab moment +0.11 muB vs scan, DB moment 0.01 -> used
+reruns 7.50/R_0.35 (always): +0.1 meV, slab moment +0.13 muB vs scan, DB moment 0.00 -> used
+reruns 7.50/R_0.25 (always): +0.2 meV, slab moment +0.11 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_8.00 (never): +0.7 meV, slab moment -0.00 muB vs scan, DB moment 0.01 -> scan value kept
+reruns 8.00/R_1.80 (always): +0.6 meV, slab moment -0.11 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_1.75 (always): +0.1 meV, slab moment -0.14 muB vs scan, DB moment 0.03 -> used
+reruns 8.00/R_1.70 (always): +0.2 meV, slab moment -0.15 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_1.65 (always): +0.5 meV, slab moment -0.21 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_1.50 (always): +0.3 meV, slab moment -0.17 muB vs scan, DB moment 0.02 -> used
+reruns 8.00/R_1.40 (always): +0.5 meV, slab moment -0.21 muB vs scan, DB moment 0.02 -> used
+reruns 8.00/R_1.30 (always): +0.7 meV, slab moment -0.24 muB vs scan, DB moment 0.02 -> used
+reruns 8.00/R_1.20 (always): +1.6 meV, slab moment -0.39 muB vs scan, DB moment 0.04 -> used
+reruns 8.00/R_1.10 (always): +2.7 meV, slab moment -0.45 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_1.00 (always): +3.2 meV, slab moment -0.48 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_0.95 (always): +2.5 meV, slab moment -0.46 muB vs scan, DB moment 0.02 -> used
+reruns 8.00/R_0.90 (always): +2.7 meV, slab moment -0.49 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_0.85 (always): +2.9 meV, slab moment -0.51 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_0.80 (always): +3.0 meV, slab moment -0.54 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_0.75 (always): +3.1 meV, slab moment -0.53 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_0.70 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_0.65 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.00 -> used
+reruns 8.00/R_0.60 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_0.55 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.01 -> used
+reruns 8.00/R_0.45 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.02 -> used
+reruns 8.00/R_0.35 (always): +3.1 meV, slab moment -0.54 muB vs scan, DB moment 0.03 -> used
+reruns 8.00/R_0.25 (always): +2.8 meV, slab moment -0.54 muB vs scan, DB moment 0.04 -> used
+reruns2 1.00/R_2.10 (lower): -16.2 meV, slab moment -0.00 muB vs scan, DB moment 0.03 -> used
+reruns2 1.55/R_2.20 (lower): -19.8 meV, slab moment -0.00 muB vs scan, DB moment 0.00 -> used
+reruns2 2.50/R_8.00 (always): +0.1 meV, slab moment -0.20 muB vs scan, DB moment 0.01 -> used
+reruns2 2.50/R_7.00 (lower): +5.7 meV, slab moment -0.07 muB vs scan, DB moment 0.03 -> scan value kept
+reruns2 3.00/R_2.40 (lower): -21.2 meV, slab moment +0.02 muB vs scan, DB moment 0.11 -> used
+reruns3 2.50/R_7.00 (lower): -11.4 meV, slab moment +0.14 muB vs scan, DB moment 0.06 -> used
+reruns3 3.00/R_2.80 (lower): -21.3 meV, slab moment -0.07 muB vs scan, DB moment 0.24 -> scan value kept (dangling bonds polarized)
+reruns3 3.00/R_2.60 (lower): -41.7 meV, slab moment -0.07 muB vs scan, DB moment 0.24 -> scan value kept (dangling bonds polarized)
+excluded 3.00/R_2.60: scan +26 meV off its neighbours; reruns2/3 polarized the dangling bonds (rejected); the row is smooth (< 8 meV) without it
+1159 points, 29 heights: 1.00 1.10 1.20 1.30 1.35 1.40 1.45 1.50 1.55 1.60 1.65 1.70 1.80 1.90 2.00 2.10 2.20 2.50 3.00 3.50 4.00 4.50 5.00 5.50 6.00 6.50 7.00 7.50 8.00

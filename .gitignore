@@ -1,0 +1,38 @@
+# VASP pseudopotentials are licensed: never commit them (use your own PAW_PBE Si 05Jan2001 + H 15Jun2001)
+POTCAR
+
+# large or regenerable VASP outputs (energies are in OSZICAR, <h>/<h>.dat and fit/pes_data.csv)
+OUTCAR
+CONTCAR
+XDATCAR
+PCDAT
+REPORT
+IBZKPT
+EIGENVAL
+DOSCAR
+PROCAR
+vasprun.xml
+vasp.out
+WAVECAR
+CHGCAR
+CHG
+# but keep the two relaxations complete (small; relaxed structures and forces)
+!relax_*_fixbot/OUTCAR
+!relax_*_fixbot/CONTCAR
+
+# cluster job files and logs (generated, contain cluster paths)
+submit.cmd
+slurm-*.out
+*.log
+
+# python / render leftovers
+__pycache__/
+report/page-*.jpg
+figs_r1r2/.vmd_startup_empty.tcl
+
+# job scripts are site-specific (cluster paths, modules, accounts): see submit.example
+submit
+submit_all
+job
+old/**/loop.sh
+figs_r1r2/fig1.tcl

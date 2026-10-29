@@ -1,0 +1,22 @@
+#!/bin/bash
+# Sample SLURM submit script for one height scan (the real per-height scripts are not in the
+# repository: they hold cluster-specific paths). Copy it into a height directory as `submit`,
+# fill in the <...> placeholders, then run from inside that directory:
+#     bash submit [JOBID]      (with JOBID the job starts after that job has ended)
+# Resubmitting continues the scan after the last converged point; prints the new job id.
+H=$(basename "$PWD")          # the directory name is the height, e.g. 1.50
+CPUS=32
+cat > submit.cmd << EOF2
+#!/bin/bash
+#SBATCH --time=4:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=$CPUS
+#SBATCH --job-name=H2_$H
+##SBATCH --account=<your_account>        # if your cluster needs one
+cd $PWD
+module load <your_intel_mpi_module>      # whatever your VASP build needs
+export OMP_NUM_THREADS=1
+export VASP_CMD="mpiexec.hydra -np $CPUS </path/to/vasp_std>"
+bash $PWD/scan.sh >& $PWD/scan.log
+EOF2
+sbatch --parsable ${1:+--dependency=afterany:$1} submit.cmd | cut -d';' -f1

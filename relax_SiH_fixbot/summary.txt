@@ -1,0 +1,12 @@
+status: relaxed (EDIFFG reached); 27 ionic steps over 1 run(s)
+E0 first step (frozen scan slab geometry)     = -131.510550 eV
+E0 final                                      = -131.547740 eV   (F = -131.675860)
+relaxation energy E0(final) - E0(first)       = -0.0372 eV
+largest remaining force on free atoms 0.0100 eV/A on ion 14 (8 atoms fixed)
+start: Si13-H = 1.5001 A, H height above Si13 = 1.5000 A, tilt 0.74 deg
+final: Si13-H = 1.5014 A, H height above Si13 = 1.5012 A, tilt 0.82 deg
+(frozen-slab PES fit: Si-H height 1.501 A)
+dangling-bond Si, displacement |dr| (dz) in A:
+  top    1: 0.103 (-0.103)  2: 0.103 (-0.103)  13: 0.090 (-0.090)  14: 0.101 (-0.101)
+  bottom 9: 0.000 (-0.000)  10: 0.000 (-0.000)  23: 0.000 (-0.000)  24: 0.000 (-0.000)
+largest displacements: ion 1: 0.103  ion 2: 0.103  ion 14: 0.101  ion 16: 0.096  ion 13: 0.090  ion 25: 0.089

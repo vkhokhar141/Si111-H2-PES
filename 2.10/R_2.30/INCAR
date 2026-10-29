@@ -1,0 +1,38 @@
+SYSTEM = Si(111) + upright H2 above Si 13, rerun of one scan point (single point)
+
+Start (run.sh switches to ISTART=1/ICHARG=1 when it restarts from the previous point)
+ISTART =  0
+ICHARG =  2
+
+Electronic
+GGA    = PE
+IVDW   = 12            (D3-BJ, same as the previous 6.00 scans)
+ENCUT  = 400
+PREC   = Normal
+LREAL  = Auto
+ALGO   = Normal
+EDIFF  = 1E-05
+NELM   = 300
+
+Spin: slab starts non-magnetic, the two H opposite (broken-symmetry singlet)
+ISPIN    = 2
+MAGMOM   = 24*0 1 -1
+AMIX_MAG = 0.8
+BMIX_MAG = 0.0001
+
+Smearing (use E0 for the PES)
+ISMEAR = 0
+SIGMA  = 0.2
+
+No ionic motion: H-H distance is fixed by POSCAR
+IBRION = -1
+NSW    = 0
+
+Parallelization (32 MPI ranks, 16 irreducible k-points)
+KPAR   = 16
+NCORE  = 2
+
+Output
+LORBIT = 11
+LWAVE  = .TRUE.
+LCHARG = .TRUE.

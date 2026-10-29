@@ -1,0 +1,51 @@
+SYSTEM = MXene                                                                                                   
+ISTART =0                                                                                                                   
+ ICHARG =2                                                                                                                  
+# NBANDS = 500                                                                                                              
+ GGA = PE                #   RP stands for RPBE, PE for PBE, 91 for PW91                                                    
+# VOSKOWN = 1                                                                                                               
+ POTIM =0.05             # default is 0.5 for frequency calculations a smaller values should be set ,0.02 example.          
+------------------------------------------                                                                                  
+Parameter for parallelization:                                                                                              
+------------------------------------------                                                                                            
+   LPLANE = .TRUE.                                                                                                          
+------------------------------------------                                                                                  
+Electronic Relaxation:                                                                                                      
+------------------------------------------                                                                                  
+ LREAL  = Auto             # Default for LREAL .FALSE. We recommend to use the real-space projection scheme for          
+                             # systems containing more than 20 atoms.                                                       
+   ENCUT  = 500                                                                                                            
+                                                                                                                            
+   PREC   = Normal         # precision:Medium/High/Low   default medium . the same time, ROPT accuracy of approximately     
+                             # 1meV/atom (10e-3). recommend to use PREC Normal for everyday calculations in VASP.4.5        
+   EDIFF  = 1e-5            # converge criterion: default=1e-4                                                             
+   ALGO  = Fast	             # algotithm (8-CG, 48-RMM), Fast means intially use DAV algo then use RMM.                     
+   NELM=  160                  # default is 60                                                                               
+   NELMIN = 6                # the minimum number of electronic SC steps  Default is 2                                      
+                             # For most systems values between NELMIN=4 and NELMIN=6 are sufficient.                        
+#   NELMDL= -5                                                                                                              
+   ISIF   = 2                # Relax ions and calculate stress tensor  default is 2. when 0, means Relax ions only.         
+   #MAGMOM = 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 0 0 0 0 0 0 0              local magnetic moment in x,y,z                                                      
+   ISPIN  = 2                # spin polarized calculation (2-yes, 1-no)                                                     
+#   NUPDOWN=1           
+   IVDW = 11                                                                                                    
+-------------------------------------------                                                                                 
+Ionic Relaxation:                                                                                                           
+-------------------------------------------                                                                                 
+   EDIFFG = -0.01            # Converge criterion(positive for energy,negetive for force)                                    
+   NSW    = 1500             #     number of steps for IOM                                                                   
+   IBRION =2               #  -1:no update 0:MD 1:quasi-New 2:CG                                                            
+#   IOPT =2                                                                                                                 
+--------------------------------------------                                                                                
+DOS Related:                                                                                                                
+--------------------------------------------                                                                                
+   ISMEAR = 0                                                                                                               
+   SIGMA  = 0.05                                                                                                           
+   LORBIT =11                                                                                                                
+--------------------------------------------                                                                                
+Output Control:                                                                                                             
+--------------------------------------------                                                                                
+   LWAVE  = .FALSE.                                                                                                         
+   LCHARG= .FALSE.                                                                                                          
+                                                                                                                            
+

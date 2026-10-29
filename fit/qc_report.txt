@@ -1,0 +1,75 @@
+== 1. slab-moment jumps (leave-one-out error > 0.10 muB)
+  h 1.10: R 1.65  m_slab +0.098  (+0.119 off its neighbours)
+  h 1.90: R 0.70  m_slab -0.032  (+0.106 off its neighbours)
+  h 1.90: R 0.75  m_slab -0.256  (-0.117 off its neighbours)
+  h 2.50: R 6.00  m_slab +0.007  (-0.109 off its neighbours)
+  h 2.50: R 7.00  m_slab +0.202  (+0.192 off its neighbours)
+  h 3.00: R 1.50  m_slab -0.192  (+0.158 off its neighbours)
+  h 4.00: R 7.00  m_slab -0.638  (-0.142 off its neighbours)
+  h 4.50: R 0.65  m_slab +0.096  (+0.114 off its neighbours)
+  h 4.50: R 0.70  m_slab +0.000  (-0.106 off its neighbours)
+  h 5.00: R 7.00  m_slab -0.045  (+0.115 off its neighbours)
+  h 7.50: R 0.35  m_slab +0.000  (-0.193 off its neighbours)
+  h 7.50: R 0.45  m_slab -0.000  (+0.108 off its neighbours)
+== 2. outliers in E_pbe(h, R) - E_pbe(8, R): leave-one-out spline error > 10 meV
+  h 1.00: rms 2.6 meV, 0 flagged
+  h 1.10: rms 2.6 meV, 0 flagged
+  h 1.20: rms 2.4 meV, 0 flagged
+  h 1.30: rms 3.0 meV, 0 flagged
+  h 1.35: rms 3.1 meV, 0 flagged
+  h 1.40: rms 2.1 meV, 0 flagged
+  h 1.45: rms 1.4 meV, 0 flagged
+  h 1.50: rms 1.9 meV, 0 flagged
+  h 1.55: rms 2.5 meV, 0 flagged
+  h 1.60: rms 2.7 meV, 0 flagged
+  h 1.65: rms 2.1 meV, 0 flagged
+  h 1.70: rms 1.4 meV, 0 flagged
+  h 1.80: rms 1.5 meV, 0 flagged
+  h 1.90: rms 2.4 meV, 0 flagged
+  h 2.00: rms 1.9 meV, 0 flagged
+  h 2.10: rms 2.0 meV, 0 flagged
+  h 2.20: rms 1.6 meV, 0 flagged
+  h 2.50: rms 2.1 meV, 0 flagged
+  h 3.00: rms 2.4 meV, 0 flagged
+  h 3.50: rms 1.8 meV, 0 flagged
+  h 4.00: rms 0.7 meV, 0 flagged
+  h 4.50: rms 1.7 meV, 0 flagged
+  h 5.00: rms 0.7 meV, 0 flagged
+  h 5.50: rms 2.1 meV, 0 flagged
+  h 6.00: rms 2.2 meV, 0 flagged
+  h 6.50: rms 0.7 meV, 0 flagged
+  h 7.00: rms 0.9 meV, 0 flagged
+  h 7.50: rms 1.3 meV, 0 flagged
+== 3. baseline cuts
+  V_H(z = 1.00) = +1.3986 eV
+  V_H(z = 1.10) = -0.7742 eV
+  V_H(z = 1.20) = -2.0947 eV
+  V_H(z = 1.30) = -2.8353 eV
+  V_H(z = 1.35) = -3.0498 eV
+  V_H(z = 1.40) = -3.1864 eV
+  V_H(z = 1.45) = -3.2600 eV
+  V_H(z = 1.50) = -3.2829 eV
+  V_H(z = 1.55) = -3.2659 eV
+  V_H(z = 1.60) = -3.2152 eV
+  V_H(z = 1.65) = -3.1414 eV
+  V_H(z = 1.70) = -3.0485 eV
+  V_H(z = 1.80) = -2.8192 eV
+  V_H(z = 1.90) = -2.5569 eV
+  V_H(z = 2.00) = -2.2776 eV
+  V_H(z = 2.10) = -1.9993 eV
+  V_H(z = 2.20) = -1.7252 eV
+  V_H(z = 2.50) = -0.9803 eV
+  V_H(z = 3.00) = -0.2297 eV
+  V_H(z = 3.50) = -0.0213 eV
+  V_H(z = 4.00) = -0.0104 eV
+  V_H(z = 4.50) = -0.0020 eV
+  V_H(z = 5.00) = -0.0026 eV
+  V_H(z = 5.50) = -0.0013 eV
+  V_H(z = 6.00) = -0.0009 eV
+  V_H(z = 6.50) = +0.0005 eV
+  V_H(z = 7.00) = -0.0003 eV
+  V_H(z = 7.50) = -0.0003 eV
+  V_H(z = 8.00) = +0.0000 eV
+  gas-phase H2 (h = 8, PBE): r_e = 0.751 A, De = 4.528 eV
+
+12 flag(s). Inspect flagged points before trusting the fit there.
