@@ -17,7 +17,7 @@ and reaction-path work.
 [The fit](#4-the-fitted-surface) · [Results](#5-main-results) ·
 [Using it](#6-using-the-data-and-the-fitted-pes) · [Repository layout](#7-repository-layout) ·
 [Rebuilding](#8-rebuilding-and-extending) · [Limits](#9-limits-of-validity) ·
-[Not included](#10-not-in-this-repository)
+[Not included](#10-not-in-this-repository) · [License and citation](#license-and-citation)
 
 ---
 
@@ -277,3 +277,13 @@ scikit-learn; otherwise refit with `python3 fit_pes.py` (about 20 min) from `fit
   rebuilt from the repository, but `fit/collect_data.py` (which reads the OUTCARs) can only be
   rerun after recomputing the points.
 - Cluster job scripts; use `submit.example` as a template.
+
+## License and citation
+
+Code and data are released under the [MIT License](LICENSE): free to use, modify and
+redistribute, provided the copyright notice is kept. If you use the data or the fitted PES in
+your work, please cite it; GitHub's **Cite this repository** button (from
+[`CITATION.cff`](CITATION.cff)) gives the reference in APA and BibTeX form:
+
+> Khokhar, V. (2026). *2D potential energy surface for H2 on Si(111) (VASP PBE-D3)* (version 1.0).
+> https://github.com/vkhokhar141/Si111-H2-PES

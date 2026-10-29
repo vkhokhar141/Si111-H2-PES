@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "2D potential energy surface for H2 on Si(111) (VASP PBE-D3)"
+abstract: >-
+  Two-dimensional potential energy surface for an H2 molecule standing upright
+  above a surface Si atom of a frozen Si(111) slab: 1159 VASP PBE-D3 single-point
+  energies on a 29 x 40 grid of H-H distance and H height, a fitted surface
+  (physical baseline plus Gaussian-process regression, analytic gradients) for
+  dynamics and reaction-path work, and the scripts used to produce and analyse it.
+type: dataset
+authors:
+  - family-names: Khokhar
+    given-names: Vikash
+repository-code: "https://github.com/vkhokhar141/Si111-H2-PES"
+url: "https://github.com/vkhokhar141/Si111-H2-PES"
+license: MIT
+version: "1.0"
+date-released: "2026-10-29"
+keywords:
+  - potential energy surface
+  - hydrogen
+  - Si(111)
+  - density functional theory
+  - VASP
+  - PBE-D3
+  - Gaussian process regression
+  - Eley-Rideal
